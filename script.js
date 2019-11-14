@@ -72,9 +72,9 @@ buttonsGroup.forEach(elem => {
 
 textArea.addEventListener('keyup', (e) => {
 	if (textArea.value.length >= 10) {
-		submit.classList.add('active-submit');
+		submit.removeAttribute('disabled');
 	} else {
-		submit.classList.remove('active-submit');
+		submit.setAttribute('disabled', 'disabled');
 	}
 });
 

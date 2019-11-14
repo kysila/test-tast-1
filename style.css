@@ -25,7 +25,7 @@ textarea {
 
 #root {
     width: 100vw;
-    height: 100vh;
+    height: 150vh;
     background-color: #eaeaea;
 }
 
@@ -133,7 +133,7 @@ textarea {
     padding: 16px 15px;
     width: 340px;
     min-height: 127px;
-    position: absolute;
+    position: sticky;
     top: calc(40% - 64px);
     left: calc(50% - 170px);
     background-color: #fff;
@@ -230,15 +230,20 @@ textarea {
     font-size: 14px;
     line-height: 16px;
     text-align: center;
-    color: #8A8A8A;
-    background: #E3E3E3;
+    background-color: #FFC200;
+    color: black;
     border-radius: 4px;
     cursor: pointer;
 }
 
-.active-submit {
-    background-color: #FFC200;
-    color: black;
+.submit:disabled {
+    color: #8A8A8A;
+    background: #E3E3E3;
+}
+
+.submit:disabled:hover {
+    color: #8A8A8A;
+    background: #E3E3E3;
 }
 
 .submit:hover {
