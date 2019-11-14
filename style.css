@@ -133,7 +133,7 @@ textarea {
     padding: 16px 15px;
     width: 340px;
     min-height: 127px;
-    position: sticky;
+    position: fixed;
     top: calc(40% - 64px);
     left: calc(50% - 170px);
     background-color: #fff;
